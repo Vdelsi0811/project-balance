@@ -292,13 +292,53 @@ nav a:hover {
     font-size: 52px;
 }
 
-.founder-page-info p:not(.small-title) {
+.role-label {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #755290;
+}
+
+.founder-page-info p:not(.small-title):not(.role-label) {
     font-size: 18px;
     line-height: 1.7;
 }
 
 .founder-page-info .button {
     margin-top: 12px;
+}
+
+.leadership-roster {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.leadership-role {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ddd2e7;
+    border-radius: 12px;
+    padding: 20px 18px;
+}
+
+.leadership-role h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+}
+
+.leadership-role p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+    .leadership-roster {
+        grid-template-columns: 1fr;
+    }
 }
 
 .donation-option p {
